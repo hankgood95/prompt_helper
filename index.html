@@ -157,7 +157,7 @@ aside { display: grid; gap: 16px; min-width: 0; }
       <div class="composer">
         <div class="inputrow">
           <label for="prompt" class="sr" hidden>질문 입력</label>
-          <textarea id="prompt" placeholder="AI에게 할 질문을 입력해 보세요">공룡 알려줘</textarea>
+          <textarea id="prompt" placeholder="AI에게 할 질문을 입력해 보세요">파이썬 알려줘</textarea>
           <button class="send" id="send" type="button">보내기</button>
         </div>
 
@@ -227,10 +227,11 @@ const RISKS = [
 const LEVELS = ["-", "약함", "보통", "강함"];
 
 const SAMPLES = [
-  { tag: "약함", text: "공룡 알려줘" },
-  { tag: "보통", text: "중학교 1학년 과학 숙제 때문에 공룡이 멸종한 이유를 알고 싶어" },
-  { tag: "강함", text: "나는 중학교 1학년이고 과학 발표를 준비하고 있어. 공룡이 멸종한 이유를 3가지로 정리해서 표로 보여줘. 초등학생도 이해할 수 있게 쉽게 써 줘. 예를 들어 '운석 충돌 - 큰 돌이 지구에 떨어짐'처럼 한 줄로." },
-  { tag: "위험", text: "제 번호는 010-1234-5678이고 한빛중학교 다녀요. 숙제 도와줘" }
+  { tag: "약함", text: "파이썬 알려줘" },
+  { tag: "약함", text: "파이썬 for문 알려줘" },
+  { tag: "보통", text: "파이썬 for문 숙제 때문에 알고 싶어. 나는 중학생이야" },
+  { tag: "강함", text: "나는 파이썬을 처음 배우는 중학생이고 숙제를 하려고 해. for문을 예제 3개와 함께 쉽게 설명해줘. 단계별로, 예를 들어 1부터 5까지 출력하는 코드처럼." },
+  { tag: "위험", text: "제 번호는 010-1234-5678이고 한빛중학교 다녀요. 파이썬 숙제 도와줘" }
 ];
 
 // 질문 하나를 채점한다
